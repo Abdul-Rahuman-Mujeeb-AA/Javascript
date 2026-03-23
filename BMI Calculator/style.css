@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(135deg, #1d2b64, #f8cdda);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+    max-width: 500px;
+}
+
+#imperialInputs{
+    display: none;
+}
+
+.bmi-card {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.result-box {
+    min-height: 120px;
+}
+
+.progress {
+    height: 25px;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    width: 0%;
+    font-weight: bold;
+    transition: width 0.8s ease;
+}
+
+/* Mobile */
+@media(max-width:576px) {
+
+    .bmi-card {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+}

@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    transition: 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #007acc;
+    color: white;
+}
+
+.controls button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 70px);
+}
+
+.editor,
+.preview {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    flex: 1;
+    margin-bottom: 10px;
+    padding: 10px;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+iframe {
+    flex: 1;
+    border: none;
+    background: white;
+}
+
+/* LIGHT THEME */
+body.light {
+    background: #f5f5f5;
+    color: #000;
+}
+
+/* DARK THEME */
+body.dark {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+body.dark textarea {
+    background: #2d2d2d;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark iframe {
+    background: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    transition: 0.3s;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #007acc;
+    color: white;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+.controls button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* MAIN LAYOUT */
+.container {
+    display: flex;
+    height: calc(100vh - 70px);
+}
+
+/* PANELS */
+.editor,
+.preview {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+textarea {
+    flex: 1;
+    margin-bottom: 10px;
+    padding: 10px;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+iframe {
+    flex: 1;
+    border: none;
+    background: white;
+}
+
+/* LIGHT THEME */
+body.light {
+    background: #f5f5f5;
+    color: #000;
+}
+
+/* DARK THEME */
+body.dark {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+body.dark textarea {
+    background: #2d2d2d;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark iframe {
+    background: #fff;
+}
+
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+
+/* TABLET */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .editor,
+    .preview {
+        height: 50%;
+    }
+
+    textarea {
+        min-height: 120px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .controls {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .editor,
+    .preview {
+        width: 100%;
+    }
+
+    textarea {
+        min-height: 100px;
+        font-size: 13px;
+    }
+
+    iframe {
+        min-height: 250px;
+    }
+}

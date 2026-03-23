@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript Practice</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>JavaScript Practice Programs</h1>
+
+        <!-- Hello World -->
+        <button onclick="helloWorld()">Print Hello</button>
+
+        <!-- Add Two Numbers -->
+        <h3>Add Two Numbers</h3>
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        <button onclick="addNumbers()">Add</button>
+        <p id="sumResult"></p>
+
+        <!-- Even or Odd -->
+        <h3>Even or Odd</h3>
+        <input type="number" id="evenOddInput">
+        <button onclick="checkEvenOdd()">Check</button>
+        <p id="evenOddResult"></p>
+
+        <!-- Positive or Negative -->
+        <h3>Positive or Negative</h3>
+        <input type="number" id="posNegInput">
+        <button onclick="checkPosNeg()">Check</button>
+        <p id="posNegResult"></p>
+
+        <!-- Compare A > B > C -->
+        <h3>Compare A, B, C</h3>
+        <input type="number" id="a" placeholder="A">
+        <input type="number" id="b" placeholder="B">
+        <input type="number" id="c" placeholder="C">
+        <button onclick="compareABC()">Compare</button>
+        <p id="compareResult"></p>
+
+        <!-- Voter Eligibility -->
+        <h3>Voter Eligibility</h3>
+        <input type="number" id="age">
+        <button onclick="checkVoter()">Check</button>
+        <p id="voterResult"></p>
+
+        <!-- Reverse String -->
+        <h3>Reverse String</h3>
+        <input type="text" id="stringInput" placeholder="Enter a string">
+        <button onclick="reverseString()">Reverse</button>
+        <p id="reverseResult"></p>
+
+        <!-- Calculator -->
+        <h3>Simple Calculator</h3>
+        <input type="number" id="calc1" placeholder="First number">
+        <input type="number" id="calc2" placeholder="Second number">
+        <select id="operator" for="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <button onclick="calculate()">Calculate</button>
+        <p id="calcResult"></p>
+
+        <!-- Character Count -->
+        <h3>Character Count</h3>
+        <input type="text" id="charInput" placeholder="Enter a string">
+        <button onclick="countChars()">Count</button>
+        <p id="charResult"></p>
+
+        <!-- Background Color -->
+        <h3>Change Background</h3>
+        <button onclick="changeColor()">Change Color</button>
+
+        <!-- Date & Time -->
+        <h3>Current Date & Time</h3>
+        <button onclick="showDate()">Show</button>
+        <p id="dateResult"></p>
+
+        <!-- Guess Game -->
+        <h3>Guess the Number</h3>
+        <input type="number" id="guessInput" placeholder="Guess a number between 1 and 100">
+        <button onclick="guessNumber()">Guess</button>
+        <p id="guessResult"></p>
+
+        <!-- To-Do List -->
+        <h3>To-Do List</h3>
+        <input type="text" id="taskInput " placeholder="Enter a task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+
+        <script src="script.js"></script>
+    </body>
+</html>

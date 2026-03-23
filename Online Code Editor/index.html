@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Online Code Editor</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="light">
+
+        <header>
+            <h1>Online Code Editor</h1>
+            <div class="controls">
+                <button id="themeToggle">Dark Mode</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="editor">
+                <label>HTML</label>
+                <textarea id="htmlCode"></textarea>
+
+                <label>CSS</label>
+                <textarea id="cssCode"></textarea>
+
+                <label>JavaScript</label>
+                <textarea id="jsCode"></textarea>
+            </div>
+
+            <div class="preview">
+                <label>Live Preview</label>
+                <iframe id="previewFrame"></iframe>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
