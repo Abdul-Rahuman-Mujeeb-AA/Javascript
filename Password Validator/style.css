@@ -1,0 +1,182 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
+}
+
+/* Wrapper for Grid Layout */
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Container */
+.container {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 380px;
+    margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect (desktop feel) */
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    font-size: 22px;
+}
+
+/* Input */
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Toggle */
+.toggle {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* Rules */
+ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+li {
+    font-size: 14px;
+    margin: 6px 0;
+    transition: color 0.3s ease;
+}
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
+
+/* Strength Bar */
+.strength {
+    margin-top: 12px;
+    height: 10px;
+    border-radius: 6px;
+    background: #ddd;
+    overflow: hidden;
+}
+
+/* Smooth animated bar */
+.strength-bar {
+    height: 100%;
+    width: 0%;
+    transition: width 0.4s ease-in-out, background 0.4s ease-in-out;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 18px;
+    border: none;
+    background: gray;
+    color: white;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: not-allowed;
+    transition: all 0.3s ease;
+}
+
+.btn.active {
+    background: green;
+    cursor: pointer;
+}
+
+.btn.active:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+/* Tablet View */
+@media (min-width: 768px) {
+    .container {
+        max-width: 420px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+/* Desktop Grid Layout */
+@media (min-width: 1024px) {
+    body {
+        background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    }
+
+    /* Grid with multiple cards */
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 30px;
+    }
+}
+
+/* Large Desktop (3 columns) */
+@media (min-width: 1400px) {
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 13px;
+    }
+}

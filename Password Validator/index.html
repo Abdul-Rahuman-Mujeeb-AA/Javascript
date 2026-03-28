@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Validator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+
+            <!-- Password Card -->
+            <div class="container">
+                <h2>Password Validator</h2>
+
+                <input type="password" id="password"
+                    placeholder="Enter password">
+
+                <div class="toggle">
+                    <input type="checkbox" id="show"> Show Password
+                </div>
+
+                <div class="strength">
+                    <div id="strengthBar" class="strength-bar"></div>
+                </div>
+
+                <ul>
+                    <li id="length" class="invalid">At least 8 characters</li>
+                    <li id="uppercase" class="invalid">Uppercase letter</li>
+                    <li id="lowercase" class="invalid">Lowercase letter</li>
+                    <li id="number" class="invalid">Number</li>
+                    <li id="special" class="invalid">Special character
+                        (@#$%^&+=)</li>
+                </ul>
+
+                <button id="submitBtn" class="btn" disabled>Submit</button>
+            </div>
+
+            <!-- Optional Second Card (UI Demo for Grid) -->
+            <div class="container">
+                <h2>Tips</h2>
+                <ul>
+                    <li>Use at least 12 characters</li>
+                    <li>Mix letters, numbers, symbols</li>
+                    <li>Avoid common words</li>
+                    <li>Don’t reuse passwords</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
