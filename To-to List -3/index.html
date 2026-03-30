@@ -21,9 +21,10 @@
             <input type="text" id="searchInput" placeholder="Search tasks...">
 
             <div class="filters">
-                <button data-filter="all">All</button>
-                <button data-filter="completed">Completed</button>
-                <button data-filter="pending">Pending</button>
+                <button class="all active" data-filter="all">All</button>
+                <button class="pending" data-filter="pending">Pending</button>
+                <button class="completed-btn"
+                    data-filter="completed">Completed</button>
             </div>
 
             <div id="todoList"></div>
